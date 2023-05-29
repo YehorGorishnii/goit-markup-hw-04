@@ -54,13 +54,13 @@ body {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
     padding: 0 15px;
 }
 
@@ -79,7 +79,6 @@ body {
     color: var(--color-primary-brand);
     margin-right: 76px;
     display: block;
-    margin-bottom: 16px;
 
 }
 
@@ -104,6 +103,10 @@ body {
 .title-section {
     background-color: var(--color-hero-background);
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .title-header {
@@ -199,6 +202,8 @@ body {
     flex-basis: calc((100% - 3 * 16px) / 3)
 }
 
+/* ---------------------------STAFF------------------------------ */
+
 .staff-container {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -237,12 +242,80 @@ body {
     letter-spacing: 0.02em;
     color: var(--color-text);
     text-align: center;
+    margin-bottom: 8px;
 }
 
+.staff-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
 
+.staff-soc-item {
+    width: 40px;
+    height: 40px;
+}
 
+.staff-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-brand);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* Portfolio */
+}
+
+.staff-soc-link:hover,
+.staff-soc-link:focus {
+    background-color: var(--color-pressed-state);
+}
+
+.staff-soc-icon {
+    fill: #FFFFFF;
+}
+
+/* ---------------------------CUSTOMERS------------------------------ */
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-subtle-text)
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border-color: var(--color-pressed-state);
+    fill: var(--color-pressed-state);
+}
+
+.customers-icon {
+    width: 104px;
+    height: 56px;
+}
+
+/* ---------------------------Portfolio------------------------------ */
 
 
 .link-menu {
@@ -280,17 +353,19 @@ body {
     color: var(--color-primary-brand);
     background-color: var(--color-light);
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
     border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid var(--color-accent)
 }
+
 
 .button-portfolio:hover,
 .button-portfolio:focus {
     color: var(--color-white-background);
     background-color: var(--color-pressed-state);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .contact {
@@ -328,6 +403,11 @@ body {
     width: calc((100% - 48px) / 3)
 }
 
+.programs:hover,
+.programs:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .projects {
     padding: 32px 16px 32px 16px;
     border: 1px solid var(--color-accent);
@@ -351,11 +431,15 @@ body {
     color: var(--color-text);
 }
 
+/* ---------------------------FOOTER------------------------------ */
+
 .footer {
     background-color: var(--color-hero-background);
 }
 
 .footer-container {
+    display: flex;
+    align-items: baseline;
     padding: 100px 0;
 }
 
@@ -395,4 +479,57 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.footer-logo-box {
+    margin-right: 16px;
+}
+
+.footer-soc-media {
+    flex-direction: column;
+    display: flex;
+    margin-left: 120px;
+
+}
+
+.footer-media {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-white-background);
+    margin-bottom: 16px;
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-brand);
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background-color: var(--color-success);
+}
+
+.footer-soc-icon {
+    fill: var(--color-light);
 }
