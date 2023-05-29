@@ -108,7 +108,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1440px;
 }
 
 .title-header {
@@ -186,7 +185,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* padding: 24px 100px; */
 }
 
 
