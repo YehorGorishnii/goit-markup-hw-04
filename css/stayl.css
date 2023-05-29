@@ -56,6 +56,7 @@ body {
     border-bottom: 1px solid #E7E9FC;
     padding-top: 24px;
     padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .header-container {
@@ -107,6 +108,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 1440px;
 }
 
 .title-header {
@@ -159,6 +161,12 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
 
+}
+
+.digital-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .digital-element {
@@ -232,6 +240,7 @@ body {
     background-color: var(--color-white-background);
     flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 
 }
 
@@ -283,7 +292,7 @@ body {
 }
 
 .staff-soc-icon {
-    fill: #FFFFFF;
+    fill:var(--color-light);
 }
 
 /* ---------------------------CUSTOMERS------------------------------ */
@@ -311,16 +320,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--color-subtle-text)
+    color: var(--color-pressed-state);
 }
 
 .customers-link:hover,
 .customers-link:focus {
     border-color: var(--color-pressed-state);
-    fill: var(--color-pressed-state);
+    color: var(--color-pressed-state);
+    fill: currentColor;
 }
 
-.customers-icon {
+.customers-icon {   
     width: 104px;
     height: 56px;
 }
@@ -413,16 +423,19 @@ body {
     width: calc((100% - 48px) / 3)
 }
 
-.programs:hover,
-.programs:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .projects {
     padding: 32px 16px 32px 16px;
     border: 1px solid var(--color-accent);
     border-top: none;
 }
+
+
+.programs-link:hover,
+.programs-link:focus{
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .projects-name {
     font-weight: 500;
@@ -492,13 +505,12 @@ body {
 }
 
 .footer-logo-box {
-    margin-right: 16px;
+    margin-right: 120px;
 }
 
 .footer-soc-media {
     flex-direction: column;
     display: flex;
-    margin-left: 120px;
 
 }
 
